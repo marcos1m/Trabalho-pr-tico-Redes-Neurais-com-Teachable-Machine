@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Page Title</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			media="screen"
+			href="css/style.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<div class="container-fluid" style="text-align: center;">
+			<header
+				class="jumbotron"
+				style="background-color: #9e2f35; color: white;"
+			>
+				<h1>Sistema de Predição de Jogos</h1>
+				<p>Sonic,Super Mario e Pacman</p>
+			</header>
+			<div class="Informacao row">
+				<div class="col-md-4">
+					<h2>Sonic</h2>
+					<p>
+						Sonic the Hedgehog é uma série de jogos e uma 
+						franquia multimídia japonesa criada pelo Sonic 
+						Team e produzida pela Sega. A franquia segue Sonic,
+						 cuja vida pacífica é sempre interrompida pelo antagonista 
+						 principal da série, Dr. Eggman.
+					</p>
+				</div>
+				
+				<div class="col-md-4">
+					<h2>Super Mario</h2>
+					<p>
+						Super Mario é uma série de videogames de plataforma
+						japonesa e franquia de mídia criada pela Nintendo e
+						apresentando seu mascote, Mario. Alternativamente
+						chamada de Super Mario Bros. ou simplesmente Mario, é a
+						série central da franquia Mario.
+					</p>
+				</div>
+				<div class="col-md-4">
+					<h2>Pac man</h2>
+					<p>
+						Pac-Man é um jogo eletrônico criado por Tōru Iwatani
+						 para a empresa Namco, e sendo distribuído para o mercado
+						  americano pela Midway Games.
+					</p>
+				</div>
+			</div>
+			<button type="button" onclick="init()">Start</button>
+			<div id="webcam-container"></div>
+			<div class="display-4" id="label-container"></div>
+
+			<footer
+				class="panel-footer"
+				style="
+					text-align: center;
+					background-color: #9e2f35;
+					color: white;
+				"
+			>
+				<p class="pt-3 pb-3">
+					&copy;
+					<script>
+						document.write(new Date().getFullYear());
+					</script>
+					| Sistemas de Informação 9º Periodo <br />
+					Marcos Antonio Gonçalves Junior <br />
+					
+				</p>
+			</footer>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+		<script src="tensor.js"></script>
+	</body>
+</html>
